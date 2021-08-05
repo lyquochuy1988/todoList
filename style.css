@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    color: #333;
+}
+
+.header {
+    text-align: center;
+    background-color: #39cbff;
+    padding: 10px 20px;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+.wrapElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myInput {
+    border: none;
+    outline: none;
+    padding: 6px;
+}
+
+.add {
+    background-color: #ff9eb5;
+    padding: 4px 8px;
+    color: #fff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+}
+
+.listItem li {
+    position: relative;
+    background-color: #eee;
+    padding: 10px 30px;
+    border-bottom: 1px solid #fff;
+}
+
+li:hover {
+    background-color: #a4a4a4;
+    cursor: pointer;
+    color: #fff;
+}
+
+li.checked {
+    background-color: #a4a4a4;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+li.checked::before {
+    /* create check icon  */
+    position: absolute;
+    content: '';
+    border-style: solid;
+    border-color: #eee;
+    border-width: 0 2px 2px 0;
+    height: 16px;
+    width: 6px;
+    transform: rotate(45deg);
+    top: 10px;
+    left: 12px;
+}
+
+
+/* span have class close icon */
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 6px 16px;
+    font-size: 22px;
+}
+
+.close:hover {
+    background-color: #ff9eb5;
+}
